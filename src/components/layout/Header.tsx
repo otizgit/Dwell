@@ -28,7 +28,7 @@ export default function Header() {
             })}
           </ul>
         </nav>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2">
           <button className="custom-fz border-[0.1em] font-medium border-black px-2 py-1 rounded-md">
             Login
           </button>
