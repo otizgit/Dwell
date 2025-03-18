@@ -22,6 +22,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.linear-text {
+  background: -webkit-linear-gradient(#a3aaaf, #ffffff, #ffffff, #a3aaaf);
+  background: linear-gradient(to right, #a3aaaf, #ffffff, #ffffff, #a3aaaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @layer components {
   .custom-fz {
@@ -32,5 +38,8 @@ html {
   }
   .paddingX {
     @apply px-[1.3rem] sm:px-[4rem] lg:px-[5rem];
+  }
+  .flex-main {
+    @apply flex items-center justify-between;
   }
 }
