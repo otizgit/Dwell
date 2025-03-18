@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --color-primary: #FFB35B;
 }
 
 * {
@@ -9,6 +10,21 @@
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
+body {
+  background-color: #f1f1f1;
+}
 html {
   scroll-behavior: smooth;
+}
+
+@layer components {
+  .custom-fz {
+    @apply text-[0.8rem];
+  }
+  .max-width {
+    @apply xl:max-w-[100rem] xl:mx-auto;
+  }
+  .paddingX {
+    @apply px-[1.3rem] sm:px-[4rem] lg:px-[5rem];
+  }
 }
