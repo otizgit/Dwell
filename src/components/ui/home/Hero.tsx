@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "@/assets/images/Home/hero-img.jpeg";
 import LocationIcon from "@/assets/images/Home/location-icon.png";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 export default function Hero() {
   return (
@@ -55,9 +56,20 @@ export default function Hero() {
             </div>
           </div>
 
-          <div>
-            <input className="custom-fz bg-white rounded-full p-2 px-5" type="text" placeholder="Filter" />
-          </div>
+          <form className="relative">
+            <label htmlFor="filter" className="bg-[#EEEEEF] absolute left-0 rounded-full grid place-items-center w-9 h-9">
+              <Icon
+                icon="iconoir:search"
+                className="text-black text-[1.2rem]"
+              />
+            </label>
+            <input
+              id="filter"
+              className="custom-fz bg-white rounded-full pl-13 px-5 h-9 placeholder:font-medium"
+              type="text"
+              placeholder="Filter"
+            />
+          </form>
         </div>
       </div>
     </div>
