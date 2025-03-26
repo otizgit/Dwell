@@ -40,7 +40,7 @@ export default function Hero() {
           alt="Image of a house"
         />
 
-        <div className="custom-fz absolute bottom-0 left-1/2 -translate-1/2 p-4 w-180 bg-[#ffffffcb] rounded-lg z-[3] flex-main gap-7">
+        <div className="custom-fz absolute bottom-0 left-1/2 -translate-1/2 p-4 w-200 bg-[#ffffffcb] rounded-lg z-[3] flex-main gap-7">
           <div className="font-semibold flex gap-6 text-center">
             <div className="border-r-[0.15em] pr-10 border-[grey]">
               <p>800+</p>
