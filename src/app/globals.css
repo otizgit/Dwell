@@ -39,6 +39,9 @@ html {
   .paddingX {
     @apply px-[1.3rem] sm:px-[4rem] lg:px-[5rem];
   }
+  .marginB {
+    @apply mb-18
+  }
   .flex-main {
     @apply flex items-center justify-between;
   }

@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 export default function Hero() {
   return (
-    <div className="max-width paddingX">
+    <div className="max-width paddingX marginB">
       <div className="overflow-hidden rounded-lg relative">
         <div className="absolute inset-0 bg-[#000000b5] z-[2] flex justify-between gap-10 items-center px-7">
           <div className="-translate-y-13">
@@ -40,8 +40,8 @@ export default function Hero() {
           alt="Image of a house"
         />
 
-        <div className="custom-fz absolute bottom-0 left-1/2 -translate-1/2 p-4 w-200 bg-[#ffffffcb] rounded-lg z-[3] flex-main gap-7">
-          <div className="font-semibold flex gap-6 text-center">
+        <div className="custom-fz absolute bottom-0 left-1/2 -translate-1/2 p-4 w-180 bg-[#ffffffcb] rounded-lg z-[3] flex-main gap-7">
+          <div className="font-semibold flex gap-10 text-center">
             <div className="border-r-[0.15em] pr-10 border-[grey]">
               <p>800+</p>
               <p>House Sold</p>
@@ -56,7 +56,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <form className="relative">
+          <form className="relative flex-1">
             <label htmlFor="filter" className="bg-[#EEEEEF] absolute left-0 rounded-full grid place-items-center w-9 h-9">
               <Icon
                 icon="iconoir:search"
@@ -65,7 +65,7 @@ export default function Hero() {
             </label>
             <input
               id="filter"
-              className="custom-fz bg-white rounded-full pl-13 px-5 h-9 placeholder:font-medium"
+              className="custom-fz bg-white w-full rounded-full pl-13 px-5 h-9 placeholder:font-medium"
               type="text"
               placeholder="Filter"
             />
