@@ -14,7 +14,9 @@ export default function Header() {
   return (
     <header className="paddingX max-width py-7">
       <div className="bg-[#E3E3E3] py-4 rounded-full px-6 flex items-center justify-between">
-        <Image className="w-24" src={Logo} alt="Dwell logo" />
+        <a href="/">
+          <Image className="w-24" src={Logo} alt="Dwell logo" />
+        </a>
         <nav>
           <ul className="flex gap-6">
             {links.map((link, index) => {
